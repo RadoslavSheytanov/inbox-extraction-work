@@ -1,5 +1,3 @@
-!pip install streamlit pandas beautifulsoup4 openpyxl
-
 import streamlit as st
 import pandas as pd
 from bs4 import BeautifulSoup
