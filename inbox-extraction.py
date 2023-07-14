@@ -16,8 +16,8 @@ def parse_html(file_content):
 
 def get_table_download_link(df):
     # Convert dataframe to CSV for download
-    csv = df.to_csv(index=False)
-    b64 = base64.b64encode(csv.encode()).decode()  # some strings <-> bytes conversions necessary here
+    csv = df.to_csv(index=False, encoding='utf-8-sig')
+    b64 = base64.b64encode(csv.encode('utf-8-sig')).decode()  # some strings <-> bytes conversions necessary here
     href = f'<a href="data:file/csv;base64,{b64}" download="output.csv">Download CSV file</a>'
     return href
 
