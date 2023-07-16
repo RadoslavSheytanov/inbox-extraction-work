@@ -3,6 +3,8 @@
 
 This is a web application built with [Streamlit](https://streamlit.io) that allows users to upload an HTML file, extracts table data from the HTML, and provides a download link for the extracted data in CSV format.
 
+![image](plantUML-diagram.png)
+
 ## Features
 
 - File uploader that accepts HTML files
